@@ -1,0 +1,8 @@
+module RMActionController {
+    header "RMActionController.h"
+    header "Actions/RMAction.h"
+    header "Actions/RMImageAction.h"
+    header "Grouping Actions/RMGroupedAction.h"
+    header "Grouping Actions/RMScrollableGroupedAction.h"
+    export *
+}
