@@ -5,6 +5,15 @@ RMActionController adheres to [Semantic Versioning](http://semver.org/).
 
 ---
 
+## [2.0.0](https://github.com/til-et/et-rmactioncontroller-ios/releases/tag/2.0.0)
+
+* Add Swift Package Manager support
+* Remove CocoaPods support (RMActionController.podspec deleted)
+* Public headers moved to `RMActionController/include/RMActionController/`
+	* Objective-C: use `#import <RMActionController/RMActionController.h>` or `@import RMActionController;`
+* Minimum deployment target raised to iOS 12
+* No functional changes compared to 1.2.1
+
 ## [1.2.1](https://github.com/CooperRS/RMActionController/releases/tag/1.2.1)
 
 * Fix RMActionController.podspec
