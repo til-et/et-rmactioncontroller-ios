@@ -11,13 +11,15 @@ let package = Package(
         .target(
             name: "RMActionController",
             path: "RMActionController",
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
-                // Every source file uses flat quoted imports (#import "RMAction.h")
-                // regardless of which subfolder it's actually in — CocoaPods flattens
-                // all headers into one shared search path; SPM doesn't, so each
+                // Public headers live in include/RMActionController/ so consumers can use
+                // <RMActionController/RMActionController.h> and SPM generates the module map
+                // from that umbrella header. Every source file uses flat quoted imports
+                // (#import "RMAction.h") regardless of which subfolder it's actually in.
+                // SPM doesn't flatten headers into one shared search path, so each
                 // subfolder needs to be an explicit header search path instead.
-                .headerSearchPath("."),
+                .headerSearchPath("include/RMActionController"),
                 .headerSearchPath("Actions"),
                 .headerSearchPath("Animations"),
                 .headerSearchPath("Categories"),

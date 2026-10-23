@@ -138,13 +138,13 @@
 		CA1015DB1DE0E5340034734D /* RMAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RMAction+Private.h"; sourceTree = "<group>"; };
 		CA1015DE1DE0E9490034734D /* RMImageActionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMImageActionTests.m; sourceTree = "<group>"; };
 		CA1015E01DE0EA8D0034734D /* RMScrollableGroupedActionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMScrollableGroupedActionTests.m; sourceTree = "<group>"; };
-		CA1373C81DE0CE89002BFD04 /* RMAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAction.h; sourceTree = "<group>"; };
+		CA1373C81DE0CE89002BFD04 /* RMAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMAction.h; path = ../include/RMActionController/RMAction.h; sourceTree = "<group>"; };
 		CA1373C91DE0CE89002BFD04 /* RMAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAction.m; sourceTree = "<group>"; };
-		CA1373CA1DE0CE89002BFD04 /* RMImageAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMImageAction.h; sourceTree = "<group>"; };
+		CA1373CA1DE0CE89002BFD04 /* RMImageAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMImageAction.h; path = ../include/RMActionController/RMImageAction.h; sourceTree = "<group>"; };
 		CA1373CB1DE0CE89002BFD04 /* RMImageAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMImageAction.m; sourceTree = "<group>"; };
-		CA1373D01DE0CE90002BFD04 /* RMGroupedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGroupedAction.h; sourceTree = "<group>"; };
+		CA1373D01DE0CE90002BFD04 /* RMGroupedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMGroupedAction.h; path = ../include/RMActionController/RMGroupedAction.h; sourceTree = "<group>"; };
 		CA1373D11DE0CE90002BFD04 /* RMGroupedAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGroupedAction.m; sourceTree = "<group>"; };
-		CA1373D21DE0CE90002BFD04 /* RMScrollableGroupedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMScrollableGroupedAction.h; sourceTree = "<group>"; };
+		CA1373D21DE0CE90002BFD04 /* RMScrollableGroupedAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMScrollableGroupedAction.h; path = ../include/RMActionController/RMScrollableGroupedAction.h; sourceTree = "<group>"; };
 		CA1373D31DE0CE90002BFD04 /* RMScrollableGroupedAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMScrollableGroupedAction.m; sourceTree = "<group>"; };
 		CA1373DD1DE0D30E002BFD04 /* RMAction+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMAction+Private.h"; sourceTree = "<group>"; };
 		CA1373DE1DE0D50F002BFD04 /* RMActionController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMActionController+Private.h"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		CA55C7951B35E98E009CF003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA55C79B1B35E996009CF003 /* RMActionControllerPresentationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionControllerPresentationTests.m; sourceTree = "<group>"; };
 		CA5EFC281D8EAC5A0020C8A8 /* RMActionController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMActionController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5EFC2A1D8EAC5A0020C8A8 /* RMActionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMActionController.h; sourceTree = "<group>"; };
+		CA5EFC2A1D8EAC5A0020C8A8 /* RMActionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RMActionController.h; path = include/RMActionController/RMActionController.h; sourceTree = "<group>"; };
 		CA5EFC2B1D8EAC5A0020C8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5EFC351D8EAC780020C8A8 /* RMActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionController.m; sourceTree = "<group>"; };
 		CA87636E1B088DDA00885A0B /* RMCustomViewActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCustomViewActionController.h; sourceTree = "<group>"; };
@@ -639,6 +639,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

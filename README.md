@@ -1,4 +1,4 @@
-RMActionController [![Build Status](https://travis-ci.org/CooperRS/RMActionController.svg?branch=master)](https://travis-ci.org/CooperRS/RMActionController/) [![Pod Version](https://img.shields.io/cocoapods/v/RMActionController.svg)](https://cocoapods.org/pods/RMActionController) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+RMActionController [![Build Status](https://travis-ci.org/CooperRS/RMActionController.svg?branch=master)](https://travis-ci.org/CooperRS/RMActionController/) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ====================
 
 This framework allows you to present just any view as an action sheet. In addition, it allows you to add actions arround the presented view which behave like a button and can be tapped by the user. The result looks very much like an UIActionSheet or UIAlertController with a special UIView and some UIActions attached.
@@ -23,10 +23,23 @@ RMActionController also contains two special actions (RMImageAction and RMScroll
 
 RMActionController supports automatic rotation between portrait and landscape.
 
-## Installation (CocoaPods)
-```ruby
-platform :ios, '8.0'
-pod "RMActionController", "~> 1.2.1"
+## Installation (Swift Package Manager)
+
+In Xcode, choose **File → Add Package Dependencies…** and enter:
+
+```
+https://github.com/til-et/et-rmactioncontroller-ios.git
+```
+
+Or add it to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/til-et/et-rmactioncontroller-ios.git", from: "1.4.0")
+],
+targets: [
+    .target(name: "YourTarget", dependencies: ["RMActionController"])
+]
 ```
 
 ## Usage
@@ -96,15 +109,12 @@ For a detailed description on how to use RMActionController take a look at the [
 
 See [Migration](https://github.com/CooperRS/RMActionController/wiki/Migration) on how to migrate to the latest version of RMActionController.
 
-## Documentation
-There is an additional documentation available provided by the CocoaPods team. Take a look at [cocoadocs.org](http://cocoadocs.org/docsets/RMActionController/).
-
 ## Requirements
 
 | Compile Time  | Runtime       |
 | :------------ | :------------ |
-| Xcode 7       | iOS 8         |
-| iOS 9 SDK     |               |
+| Xcode 15      | iOS 12        |
+| Swift 5.9     |               |
 | ARC           |               |
 
 Note: ARC can be turned on and off on a per file basis.
